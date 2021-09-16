@@ -1,0 +1,26 @@
+@import '~antd/dist/antd.css';
+
+.ant-btn-background-ghost.ant-btn-primary {
+	color: #001529;
+	border-color: #001529;
+	text-shadow: none;
+}
+
+.site-layout-content {
+	position: relative;
+
+	h1 {
+		margin-bottom: 40px;
+	}
+	.ant-card {
+		min-height: 610px;
+		margin-bottom: 40px !important;
+
+		button {
+			width: 290px;
+			margin: 0 auto;
+			position: absolute;
+			bottom: 10px;
+		}
+	}
+}
