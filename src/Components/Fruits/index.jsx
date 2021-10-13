@@ -21,7 +21,7 @@ function Fruits(props) {
 
 	return (
 		<Content style={{ padding: '0 50px', minHeight: '80vh' }}>
-			<Breadcrumb style={{ margin: '16px 0' }}>
+			<Breadcrumb style={{ margin: '16px 20px' }}>
 				<Breadcrumb.Item>Home</Breadcrumb.Item>
 				<Breadcrumb.Item>Fruits</Breadcrumb.Item>
 			</Breadcrumb>
