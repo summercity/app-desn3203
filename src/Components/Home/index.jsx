@@ -1,7 +1,8 @@
 import React, { useContext, useEffect } from 'react';
-import { Layout, Col, Row, Carousel } from 'antd';
+import { Layout, Col, Row } from 'antd';
 import { Context } from '../../context/ContextStore';
 import { SET_PAGE_INFO } from '../../context/constants';
+import SkillChart from '../../Common/SkillChart';
 
 import './styles/Home.scss';
 import Languages from './images/languages.png';
@@ -39,8 +40,11 @@ function Home(props) {
 						<div className="row-custom-content">
 							<div className="row-custom-content-main-div">
 								<h2 style={contentStyle}>
-									<div class="image-cropper">
-										<img src="https://scontent.fyyc3-1.fna.fbcdn.net/v/t31.18172-8/191580_200880043263417_2080176_o.jpg?_nc_cat=104&ccb=1-5&_nc_sid=cdbe9c&_nc_ohc=S4xq_MylFngAX_IjCjH&_nc_ht=scontent.fyyc3-1.fna&oh=e6d98b0a1501f10112582ed2628f223c&oe=618A0B0E" />
+									<div className="image-cropper">
+										<img
+											src="https://scontent.fyyc3-1.fna.fbcdn.net/v/t31.18172-8/191580_200880043263417_2080176_o.jpg?_nc_cat=104&ccb=1-5&_nc_sid=cdbe9c&_nc_ohc=S4xq_MylFngAX_IjCjH&_nc_ht=scontent.fyyc3-1.fna&oh=e6d98b0a1501f10112582ed2628f223c&oe=618A0B0E"
+											alt="External"
+										/>
 									</div>
 									<span>Welcome!</span>
 									<p>
@@ -121,6 +125,13 @@ function Home(props) {
 						<h1>EXPERTISE</h1>
 						<div className="img-wrapper-expertise">
 							<img src={Languages} alt="Expertise" />
+						</div>
+					</Col>
+				</Row>
+				<Row gutter={16} className="row-experience">
+					<Col xs={{ span: 24 }} md={{ span: 24 }} lg={{ span: 24 }}>
+						<div>
+							<SkillChart />
 						</div>
 					</Col>
 				</Row>

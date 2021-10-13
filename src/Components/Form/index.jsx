@@ -135,7 +135,7 @@ function RegistrationF(props) {
 
 	return (
 		<Content
-			class="registration-form-wrapper"
+			className="registration-form-wrapper"
 			style={{ minHeight: '80vh' }}
 		>
 			<Breadcrumb style={{ margin: '16px 20px' }}>
@@ -157,7 +157,7 @@ function RegistrationF(props) {
 					</Col>
 				</Row>
 			</div>
-			<div class="custom-form">
+			<div className="custom-form">
 				<Form
 					{...formItemLayout}
 					form={form}
@@ -287,7 +287,7 @@ function RegistrationF(props) {
 						]}
 					>
 						<InputNumber
-							addonAfter={suffixSelector}
+							addonafter={suffixSelector}
 							style={{ width: '100%' }}
 						/>
 					</Form.Item>
@@ -372,7 +372,8 @@ function RegistrationF(props) {
 						{...tailFormItemLayout}
 					>
 						<Checkbox>
-							I have read the <a href="">agreement</a>
+							I have read the{' '}
+							<a href="www.google.com">agreement</a>
 						</Checkbox>
 					</Form.Item>
 					<Form.Item {...tailFormItemLayout}>
