@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="index.js"></script>
+    </head>
+    <body>
+        <h2>JavaScript Statements</h2>
+        <h3>Example1</h3>
+        <p>Multiple statements on one line is allowed.</p>
+        <p id="ex1"></p>
+        <script>
+           // var let and const, ltpl
+            var a, b, c;
+            a = 5; b = 6; c = a + b;
+            document.getElementById("ex1").innerHTML = "C = " + c;  //c=11
+        </script>
+        <h3>Example2</h3>
+        <p>JavaScript statements are separated by semicolons.</p>
+        <p id="ex2"></p>
+        <script>
+            var a;
+            var b, c;
+            a = 5;
+            b = 6;
+            c = a + b;
+            document.getElementById("ex2").innerHTML = c;
+        </script>
+        <h3>Example3</h3>
+        <p>Variable values can be displayed using variable name</p>
+        <p id="ex3_vals"></p>
+        <p id="ex3"></p>
+        <p id="ex3_vals2"></p>
+        <input type="button" value="sum" onclick="addTwoNum();" >
+        <h3>Exer2</h3>
+        <p id="exer2"></p>
+        <button onclick="total();">Total</button>
+        <p id="exer3"></p>
+        <button onclick="getProduct();">Get Product</button>
+        <hr/>
+        <hr/>
+        <input type="text" id="input1" />
+        <input type="text" id="input2" />
+        <button onClick="Greet();">Greet</button>
+        <p id="exer4"></p>
+        <script>
+           //ex1
+             //write a js statment to display the following output 
+            // a = 5 and b = 6  and the sum of a and b is 11
+            //ex2
+            //convert this js code into a function inside external js file and call 
+            //the function with button to display the output on your webpage
+            //make sure you use slack or teams to share your code to me
+        </script>
+    </body>
+</html>

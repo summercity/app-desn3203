@@ -1,0 +1,356 @@
+﻿<!doctype html>
+
+<html lang="en">
+<html>
+<head>
+    <meta charset="utf-8">
+    
+    <title>The Lyrics Party - Talking Heads - This Must Be The Place (Naive Melody)</title>
+    <meta name="description" content="This Must Be The Place (Naive Melody) Lyrics">
+    
+    <style>
+        /* === GENERAL === */
+        body {
+            font-family: 'Barlow', sans-serif;
+            font-weight: 500;
+            font-size: 10px;
+            letter-spacing: 1px;
+            padding: 0;
+            margin: 0;
+            color: #444;
+        }
+        
+        h1, h2, h3, h4, h5, h6 {
+            text-transform: uppercase;
+            font-weight: 700;
+            padding: 0;
+            margin: 0;
+        }
+            h1, h2, h3, h4, h5, h6 {
+                font-family: 'Barlow Condensed', sans-serif;
+            }
+            h2 {
+                font-size: 2em;
+                margin: 0 0 .3em 0;
+                color: #444;
+                font-weight: 300;
+            }
+            h3 {
+                font-size: 1.5em;
+            }
+        
+        p {
+            font-size: 1.6em;
+            line-height: 1.4em;
+            margin: 0 0 3em 0;
+            padding: 0;
+        }
+        em {
+            font-style: italic;
+        }
+        strong {
+            font-weight: bolder;
+        }
+        
+        a {
+            font-family: 'Barlow', sans-serif;
+            font-weight: bold;
+        }
+            a:link, a:visited, a:active {
+                color: #444;
+                text-decoration: none;
+                background: yellow;
+                padding: 4px 6px;
+            }
+            a:hover {
+                background: #444;
+                color: yellow;
+                transition: .5s;
+            }
+        
+        sup {
+            font-size: 70%;
+        }
+            sup a:link, sup a:visited, sup a:active {
+                padding: 0;
+                color: yellow;
+                background: none;
+            }
+            sup a:hover {
+                border-bottom: solid 2px yellow;
+                transition: .5s;
+            }
+        
+        /* === RESPONSIVE === */
+        
+        .row {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            
+        }
+        
+        .left {
+            flex-grow: 5;
+            flex-shrink: 2;
+        }
+        
+        .right {
+            flex-grow: 1;
+            flex-shrink: 0;
+            width: 30%;
+        }
+        
+ 
+        /* === HEADER === */
+        #site_header {
+            background-color: yellow;
+            text-align: center;
+            padding: 0;
+            margin: 0;
+        }
+            #site_header h1 {
+                font-family: 'Barlow', sans-serif;
+                font-size: 2em;
+                color: #444;
+                padding: 15px 0px 5px 0px;
+                margin: 0;
+            }
+        
+        
+        /* === NAVIGATION === */
+        #nav-main {
+            background-color: #444;
+            margin: 10px 0 0 0;
+            padding: 15px;
+        }
+            #nav-main ul {
+                list-style: none;
+                margin: 0;
+                padding: 0;
+            }
+            #nav-main li {
+                display: inline;           
+            }
+            #nav-main a {
+                font-size: 1.2em;
+                padding: 20px;
+                background: none;
+            }
+            #nav-main a:link, #nav-main a:visited, #nav-main a:active {
+                color: white;
+                text-decoration: none;
+            }
+            #nav-main a:hover {
+                color: yellow;
+                text-decoration: underline;
+            }
+
+        
+        /* === CONTENT === */        
+        #header_album {
+            background-image: url(images/talking_heads-speaking_in_tongues.png);
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+            background-position: center;
+        }
+            #header_album section {
+                background-color: rgba(0, 0, 0, 0.8);
+                width: 80%;
+                margin: auto;
+                padding: 40px 20px;
+                overflow: auto;
+                display: block;
+            }
+            #header_album h1 {
+                color: yellow;
+                font-size: 4em;
+                line-height: .8em;
+                padding: 20px 0 5px 0;
+                margin: 0;
+            }
+            #header_album h2 {
+                color: white;
+                font-size: 2.5em;
+                line-height: 1em;
+                padding: 0;
+                margin: 0px 0 0 0;
+            }
+            #header_album h3 {
+                color: #ccc;
+                font-size: 2em;
+                font-weight: 500;
+                line-height: 1em;
+                padding: 0;
+                margin: 20px 0 0 0;
+            }
+            #header_album img {
+            height: 200px;
+            float: right;
+            margin-left: 30px;
+            }
+        
+        #main_content {
+            max-width: 80%;
+            margin: auto;
+            background: white;
+            padding: 20px;
+        }
+            #main_content .verse {
+                border-left: solid 2px yellow;
+                padding-left: 20px;
+            }
+            #main_content .chorus {
+                margin-left: 30px;
+                border-left: solid 2px yellow;
+                padding-left: 20px;
+            }
+            .verse h2, .chorus h2 {
+                background: yellow;
+                display: inline-block;
+                padding: 5px 20px;
+                margin: 0px 0px 10px -20px;
+                line-height: 1.6em;
+            }
+                
+        /* === SIDEBAR === */
+        aside {
+            padding: 20px;
+            background-color: #444;
+            color: white;
+        }
+            aside h2 {
+                background-color: yellow;
+                margin: -20px -20px 20px -20px;
+                padding: 20px;
+            }
+            aside p {
+                font-size: 1.4em;
+            }
+            aside blockquote {
+                font-size: 1.4em;
+                margin-right: 20px;
+            }
+        
+        #music-video > iframe {
+            margin-top: 20px;
+            border-top: solid 3px white;
+            padding-top: 20px;
+            width: 100%;
+        }
+        
+        /* === FOOTER === */
+        footer {
+            margin: 60px 0 30px 0;
+            border-top: solid 3px yellow;
+            padding: 20px;
+        }
+            footer cite {
+                font-size: 1em;
+                font-style: italic;
+                line-height: 1.7em;
+            }
+    </style>
+    
+    <link href="https://fonts.googleapis.com/css?family=Barlow+Condensed:500,500i,700|Barlow:400,400i,500,500i,700" rel="stylesheet">
+    
+</head>
+
+<body>
+    
+    <header id="site_header">
+        <h1>The Lyrics Party</h1>
+        <nav id="nav-main">
+            <ul>
+                <li><a href="#">home</a></li>
+                <li><a href="#">top songs</a></li>
+                <li><a href="#">community</a></li>
+            </ul>
+        </nav>
+    </header>
+        
+    <main>
+        <header id="header_album">
+            <section>
+                <img src="images/talking_heads-speaking_in_tongues.png">
+
+                <h1>This Must Be The Place (Naive Melody)</h1>
+                <h2>Talking Heads</h2>
+                <h3>Album: <strong>Speaking in Tongues</strong></h3>
+            </section>
+        </header>
+        <article id="main_content" class="row">
+            <div class="left">
+                <section class="verse">
+                    <h2>[Verse 1]</h2>
+                    <p>Home is where I want to be<br>
+                    Pick me up and turn me round<br>
+                    I feel numb, born with a weak heart<br>
+                    I guess I must be having fun<br>
+                    The less we say about it, the better<br>
+                    Make it up as we go along<br>
+                    Feet on the ground, head in the sky<br>
+                    It's okay, I know nothing's wrong, nothing</p>
+                </section>
+
+                <section class="chorus">
+                    <h2>[Chorus]</h2>
+                    <p>Hi-yeah, I got plenty of time<br>
+                    Hi-yeah, you got light in your eyes<br>
+                    And you're standing here beside me<br>
+                    I love the passing of time<br>
+                    Never for money, always for love<br>
+                    Cover up and say goodnight, say goodnight</p>
+                </section>
+
+                <section class="verse">
+                    <h2>[Verse 2]</h2>
+                    <p>Home is where I want to be<br>
+                    But I guess I'm already there<br>
+                    I come home, she lifted up her wings<br>
+                    I guess that this must be the place<br>
+                    I can't tell one from the other<br>
+                    Did I find you or you find me?<br>
+                    There was a time before we were born<br>
+                    If someone asks, this is where I'll be, where I'll be</p>
+                </section>
+
+                <section class="chorus">
+                    <h2>[Chorus]</h2>
+                    <p>Hi-yeah, we drift in and out<br>
+                    Hi-yeah, sing into my mouth<br>
+                    Out of all those kinds of people<br>
+                    You got a face with a view<br>
+                    I'm just an animal looking for a home<br>
+                    Share the same space for a minute or two<br>
+                    And you love me 'til my heart stops<br>
+                    Love me 'til I'm dead<br>
+                    Eyes that light up, eyes look through you<br>
+                    Cover up the blank spots, hit me on the head, ah-ooh</p>
+                </section>
+            </div>
+            <aside class="right">
+                <h2>About the song</h2>
+                <p><em>"This Must Be the Place (Naive Melody)"</em> is a song by new wave band Talking Heads, released in November 1983 as the second single from their fifth album Speaking in Tongues. The lyrics were written by David Byrne, and the music was written by Byrne and the other members of the band, Chris Frantz, Tina Weymouth and Jerry Harrison.</p>
+                <p>In the "Self Interview" on the DVD of the concert film Stop Making Sense, Byrne states that it is a love song, a topic he tends to avoid because it is "kinda big." He also said of the song:</p>           
+                <blockquote>That's a love song made up almost completely of non sequiturs, phrases that may have a strong emotional resonance but don't have any narrative qualities. It's a real honest kind of love song. I don't think I've ever done a real love song before. Mine always had a sort of reservation, or a twist. I tried to write one that wasn't corny, that didn't sound stupid or lame the way many do. I think I succeeded; I was pretty happy with that.<sup><a href="#cite1">[1]</a></sup></blockquote>
+                
+                <section id="music-video">
+                    <iframe src="https://www.youtube.com/embed/DFeforW2ycI?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                </section>
+            </aside>
+        </article>
+        
+        <footer>
+            <section>
+                <cite id="cite1"><sup>1</sup> (n.d.). This Must Be the Place (Naive Melody) - Wikipedia. Retrieved July 4, 2018, from <a href="https://en.wikipedia.org/wiki/This_Must_Be_the_Place_(Naive_Melody)">https://en.wikipedia.org/wiki/This_Must_Be_the_Place_(Naive_Melody)</a></cite>
+            </section>
+        </footer>
+        
+
+    </main>
+    
+</body>
+</html>

@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>JavaScript: Functions</title>
+</head>
+<body>
+<!-- <script src="index.js"></script> -->
+<!-- =, ==, ===, =< , = >....etc -->
+ <script> 
+function compareDataTypes1() {
+  let x = 5;//= 
+  var y = '5';
+  console.log(x == y);//== t
+}
+compareDataTypes1();
+function compareDataTypes2() {
+  var x1 = 9;
+  var y1 = '9'  ;
+  console.log(x1 === y1);//f t = f
+  // 9 === '9' are not equal in js
+  //9 === '9' is false
+}
+compareDataTypes2();
+//Ex----------------------------------------------
+function compareDataTypes3() {
+  var x = 5;
+  var y = '2' + '3';
+  console.log(x == y);
+}
+compareDataTypes3();
+//Ex---------------------------------------------
+function compareDataTypes4() {
+  var x = 'test 5';
+  var y = 'test ' + 2 + 3;
+  console.log(y);
+  console.log("function four is = " + (x == y));
+}
+compareDataTypes4();
+//---------------------------------------
+function compareDataTypes5() {
+  var x = '5 test';
+  var y = 2 + 3 + ' test';
+  console.log(x == y);
+}
+compareDataTypes5();
+function compareDataTypes6() {
+  var x = '5 test';
+  var y = 2 + 3 + ' test';
+  console.log(x === y);
+}
+compareDataTypes6();
+/*
+Types of function defintion:-
+Named function
+Anonymous function
+Function expression
+Function with argument
+Function with parameter
+*/
+ //function declaration--------------------------------
+function square(n){
+  return console.log( n* n);
+}
+square(10); // call function by name
+square(20);
+//anonymous function
+//EX1--------------------------------------------
+var sqr = function (n){
+  return console.log(n *n );
+}(6);
+sqr(3);
+/*
+//EX2-----------------------------------------------
+var multi = function(a,b){
+  return console.log(a * b);
+};
+multi(2,3);
+//EX3---------------------------------------------
+var product = function(a,b){
+  return console.log(a * b);
+};
+//EX--------------------------------------------
+var compareDT1 = function(x,y) {  
+  return console.log(x === y);
+};
+compareDT1(4,'4');
+//EX----------------------------------------------
+var compareDT1 = function(x,y) {  
+  return console.log(x === y);
+}();
+*/
+//Example-----------------------------------------
+/*
+var product = function(a,b){
+  var a = a;
+  var b = b;
+  return (
+      console.log(a * b),
+      console.log(this),
+      console.log(this.a),
+      console.log(this.b),
+      console.log(arguments)
+  )
+}(10,3);
+//product(10,3);
+// usnig function as object method
+*/
+/*
+var calculate = {
+  msg: "Nice",
+  a:4,
+  b:10,
+  product : function(a,b){
+      return (
+        console.log(this.msg),
+        console.log(this.a + this.b),
+        console.log( a + b)
+      )
+  },
+}
+calculate.product(3,4);
+*/
+</script>
+</body>
+</html>

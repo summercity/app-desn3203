@@ -1,0 +1,20 @@
+.container {
+	width: 500px;
+	padding: 20px;
+}
+
+.btn-container {
+	padding-left: 100px;
+}
+
+.nav {
+	background: violet;
+}
+
+a {
+	color: #fff !important;
+}
+
+a:hover {
+	background-color: tomato;
+}

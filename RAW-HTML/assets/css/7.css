@@ -1,0 +1,73 @@
+.form-jda-style {
+	margin: 0 auto;
+	max-width: 500px;
+	padding: 20px 12px 10px 20px;
+	font: 13px Arial, Helvetica, sans-serif;
+}
+.form-jda-style-heading {
+	font-weight: bold;
+	font-style: italic;
+	border-bottom: 2px solid #ddd;
+	margin-bottom: 20px;
+	font-size: 15px;
+	padding-bottom: 3px;
+}
+.form-jda-style label {
+	display: block;
+	margin: 0px 0px 15px 0px;
+}
+.form-jda-style label > span {
+	width: 100px;
+	font-weight: bold;
+	float: left;
+	padding-top: 8px;
+	padding-right: 5px;
+}
+.form-jda-style span.required {
+	color: red;
+}
+.form-jda-style .tel-number-field {
+	width: 40px;
+	text-align: center;
+}
+.form-jda-style input.input-field,
+.form-jda-style .select-field {
+	width: 48%;
+}
+.form-jda-style input.input-field,
+.form-jda-style .select-field {
+	border: 1px solid #c2c2c2;
+	border-radius: 3px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	padding: 7px;
+	outline: none;
+}
+.form-jda-style .input-field:focus,
+.form-jda-style .select-field:focus {
+	border: 1px solid #000;
+}
+.form-jda-style .textarea-field {
+	height: 100px;
+	width: 55%;
+}
+.form-jda-style input[type='submit'],
+.form-jda-style input[type='button'] {
+	border: none;
+	padding: 8px 15px 8px 15px;
+	background: #000;
+	color: #fff;
+	border-radius: 3px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+}
+.form-jda-style input[type='submit']:hover,
+.form-jda-style input[type='button']:hover {
+	background: #000;
+	color: #fff;
+}
+
+#reason7,
+.test {
+	margin-top: 700px;
+}

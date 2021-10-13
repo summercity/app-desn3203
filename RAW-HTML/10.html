@@ -1,0 +1,36 @@
+<!doctype HTML>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Inline, Internal and External JS</title>
+        <script src="assets/js/10.js" ></script>  
+    </head> 
+    <body> 
+        <section>
+            <h2>How to include and use JS file</h2>
+        </section>
+        Working with inline JS<div id="msg"></div>
+        <br />
+        Call to internal JS function<button onclick="hello();">Click me</button><p id="msg2"></p> <br />
+        Access to external jS file<button  onclick="hello1();">Try me</button>
+        <!-- what will you modify in this code to avoid redendency? -->
+        <div id="mymsg"></div>
+        <div id="namehere1"></div>
+        <div id="namehere2"></div>
+        <div id="namehere3"></div>
+        <script>
+            document.getElementById('msg').innerHTML="This message is displayed from script"
+        </script>
+        <script>
+            function hello(){
+                document.getElementById('msg2').innerHTML="This message is diplayed from internal js function based on click event";
+            }
+            function DisplayName(anyName,id){
+                document.getElementById(id).innerHTML=anyName;
+            }
+            DisplayName("Jan Dave Arce", "namehere1");
+            DisplayName("Jan Dave Arce","namehere2");
+            DisplayName("Jan Dave Arce","namehere3");
+        </script>
+    </body>
+</html>

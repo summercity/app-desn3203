@@ -1,0 +1,42 @@
+@import '../../../settings.scss';
+
+.ant-layout-content {
+	padding: unset !important;
+}
+.row-custom {
+	margin: unset !important;
+	background: #fff;
+	width: 100%;
+	width: 100% !important;
+	img {
+		max-width: 600px;
+	}
+	.fb-pic-1 {
+		width: 200px;
+		img {
+			width: 300px !important;
+			margin: 0 auto;
+			border-radius: 5px;
+		}
+	}
+	.row-custom-content {
+		div {
+			h2 {
+				padding: 20px;
+			}
+			span {
+				font-size: 50px;
+				line-height: 50px;
+				color: $darkTextColor;
+				text-align: left;
+			}
+			p {
+				margin-top: 50px;
+			}
+		}
+	}
+}
+.img-custom {
+	margin: 0 auto !important;
+	max-width: 700px;
+}

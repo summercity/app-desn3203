@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+    /* this is the big container that contained box b and c */
+    .wrapper{
+        width:900px; height:900px;
+        background-color:rgb(115, 133, 211);
+        margin-left:70px;
+        margin-top:40px;
+    }
+    .box{/*This class is common for all the three divs*/
+        height:100px; 
+        width:200px;
+        }
+    /*All the divs taks the margin peroperty from the parent div wrapper*/
+    #diva {
+        position:fixed; /* the postion makes the container to remain fixed according to the document intial point*/
+        background-color:green; 
+        left:90px;
+        top:60px;
+        z-index:1;
+        }
+    #divb{
+        background-color: blue; 
+        }
+    #divc{  
+        background-color:yellow;
+        }
+    /* div d and e have postion attribute but still remain in the wrapper container */
+    #divd{
+        background-color: red;
+        position: relative;
+    }
+    #dive{
+        background-color: rgb(43, 35, 35);
+        position: absolute;
+    }
+    /*------Display positioning for list items -----*/  
+    #list1{
+        background-color:rgb(230, 233, 72);
+        display:inline-block;
+        border: solid 1px black;
+        }
+    #list2{
+        background-color:rgb(211, 85, 148);
+        display:inline
+        }
+    #list3{
+        background-color:rgb(76, 226, 139); 
+        display:inline
+        }
+    .Menu{
+        width:70px; 
+        height:40px; 
+        list-style-type:none
+        }
+    .list_wrap{
+        border-radius: 3px;
+        border-bottom: royalblue solid 2px;
+    }
+</style>
+</head>
+<body>
+<div class="list_wrap">
+    <li class="Menu" id="list1">Menu1</li>
+    <li class="Menu" id="list2">Menu2</li>
+    <li class="Menu" id="list3">Menu3</li>
+</div>
+<br />
+<div class="list_wrap">
+    <li>Menu1</li>
+    <li>Menu2</li>
+    <li>Menu3</li>
+</div>
+<br />
+<div class="wrapper"> 
+    <div id="diva" class="box">Div Box A </div>
+    <div id="divb" class="box">Div Box B</div>
+    <div id="divc" class="box">Div Box C</div>
+    <div id="divd" class="box">Div Box D</div>
+    <div id="dive" class="box">Div Box E</div>
+</div> 
+</body>
+</html>

@@ -1,0 +1,12 @@
+@import '../../../settings.scss';
+
+.ant-menu-dark.ant-menu-horizontal > .ant-menu-item:hover {
+	background-color: $primaryBackground !important;
+}
+.ant-menu.ant-menu-dark .ant-menu-item-selected,
+.ant-menu-submenu-popup.ant-menu-dark .ant-menu-item-selected {
+	background-color: #fff !important;
+	a {
+		color: $primaryBackground;
+	}
+}

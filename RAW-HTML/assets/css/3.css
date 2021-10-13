@@ -1,0 +1,67 @@
+#topblock{
+    background-color:black; height:150px;
+    color: gold;
+    text-align: center;
+} 
+.topheader{
+    color:white; text-align:center"
+}
+#leftblock{
+    background-color:aquamarine; height:950px; width:250px; float:left;
+}
+#rightblock{
+    background-color:green; height:950px; width:970px; float:left;
+}       
+#bottomblock{
+    background-color:gray; clear:both; text-align:center;color: white;
+}
+/*footer section css*/
+.footer_col{
+    display: inline-block;
+    width: 350px;
+    height: auto;
+    border: solid 1px red;
+    margin:20px;
+}
+.thanks{
+    color: blue;
+    font-style: italic;
+}
+/* nav css */
+.nav{
+    position: relative;
+    border: solid greenyellow 1px;
+    background-color: grey;
+}
+a {
+    margin-top:5px;
+    padding-left:18px;
+    display:inline-block;
+    width:150px;
+    font-size: 20px;
+    font-style:bold;
+    color:white;
+    background-color:#33b5e5;
+    text-decoration:none;           
+}
+a:hover{background-color:gray;}
+/* .a{background-color:black;} */
+
+
+/* From me */
+#rightblock p{
+    padding: 0 20px 0 20px;
+}
+
+#leftblock #topblock, #leftblock nav {
+    background: aquamarine;
+}
+
+#leftblock h1 {
+    color: black
+}
+
+a:active {
+    color: #fff !important;
+    background-color: #000;
+  }
