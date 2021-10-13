@@ -1,10 +1,10 @@
 import { Route, BrowserRouter, Switch } from 'react-router-dom';
-import AppWrapper from '../src/components/AppWrapper';
-import Home from '../src/components/Home';
-import Profile from '../src/components/Profile';
-import Form from '../src/components/Form';
-import Professions from '../src/components/Professions';
-import Fruits from '../src/components/Fruits';
+import AppWrapper from './Components/AppWrapper';
+import Home from './Components/Home';
+import Profile from './Components/Profile';
+import Form from './Components/Form';
+import Professions from './Components/Professions';
+import Fruits from './Components/Fruits';
 
 function App() {
 	return (
