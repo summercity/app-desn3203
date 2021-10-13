@@ -1,9 +1,9 @@
 import { Route, BrowserRouter, Switch } from 'react-router-dom';
 import AppWrapper from './Components/AppWrapper';
 import Home from './Components/Home';
-import Profile from './Components/Profile';
+// import Profile from './Components/Profile';
 import Form from './Components/Form';
-import Professions from './Components/Professions';
+// import Professions from './Components/Professions';
 import Fruits from './Components/Fruits';
 
 function App() {
