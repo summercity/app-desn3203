@@ -25,12 +25,12 @@ function Header(props) {
 				<Menu.Item key="home">
 					<a href="/">Home</a>
 				</Menu.Item>
-				<Menu.Item key="profile">
+				{/* <Menu.Item key="profile">
 					<a href="/profile">Profile</a>
 				</Menu.Item>
 				<Menu.Item key="professions">
 					<a href="/professions">Professions</a>
-				</Menu.Item>
+				</Menu.Item> */}
 				<Menu.Item key="form">
 					<a href="/form">Registration</a>
 				</Menu.Item>

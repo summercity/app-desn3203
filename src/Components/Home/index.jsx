@@ -21,7 +21,7 @@ function Home(props) {
 
 	const contentStyle = {
 		padding: '90px',
-		color: '#000',
+		color: '#fff',
 		textAlign: 'justify',
 		justifyInner: 'center',
 	};
@@ -31,7 +31,7 @@ function Home(props) {
 			<div className="site-layout-content">
 				<Row
 					gutter={16}
-					className="row-custom"
+					className="row-custom dv-ms-su-mlp-3 "
 					style={{ padding: '30px' }}
 				>
 					<Col xs={{ span: 24 }} md={{ span: 24 }} lg={{ span: 12 }}>
@@ -52,6 +52,12 @@ function Home(props) {
 										project basis.
 									</p>
 								</h2>
+								{/* <div className="fb-pic-1">
+									<img
+										src="https://scontent.fyyc3-1.fna.fbcdn.net/v/t31.18172-8/191580_200880043263417_2080176_o.jpg?_nc_cat=104&ccb=1-5&_nc_sid=cdbe9c&_nc_ohc=S4xq_MylFngAX_IjCjH&_nc_ht=scontent.fyyc3-1.fna&oh=e6d98b0a1501f10112582ed2628f223c&oe=618A0B0E"
+										alt="Success design"
+									/>
+								</div> */}
 							</div>
 						</div>
 					</Col>
@@ -60,12 +66,12 @@ function Home(props) {
 							src="https://scontent.fyyc3-1.fna.fbcdn.net/v/t31.18172-8/191580_200880043263417_2080176_o.jpg?_nc_cat=104&ccb=1-5&_nc_sid=cdbe9c&_nc_ohc=S4xq_MylFngAX_IjCjH&_nc_ht=scontent.fyyc3-1.fna&oh=e6d98b0a1501f10112582ed2628f223c&oe=618A0B0E"
 							alt="Profile Image"
 						/> */}
-						<div className="img-custom fb-pic-1">
+						{/* <div className="img-custom fb-pic-1">
 							<img
 								src="https://scontent.fyyc3-1.fna.fbcdn.net/v/t31.18172-8/191580_200880043263417_2080176_o.jpg?_nc_cat=104&ccb=1-5&_nc_sid=cdbe9c&_nc_ohc=S4xq_MylFngAX_IjCjH&_nc_ht=scontent.fyyc3-1.fna&oh=e6d98b0a1501f10112582ed2628f223c&oe=618A0B0E"
 								alt="Success design"
 							/>
-						</div>
+						</div> */}
 					</Col>
 				</Row>
 				<Row
