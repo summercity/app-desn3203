@@ -4,3 +4,44 @@ html,
 body {
 	overflow-x: hidden;
 }
+.logo {
+	float: left;
+	width: 120px;
+	// height: 31px;
+	// margin: 16px 24px 16px 0;
+	background: rgba(255, 255, 255, 0.3);
+	font-size: 50px;
+	padding-left: 10px;
+}
+
+.ant-menu.ant-menu-dark,
+.ant-menu-dark .ant-menu-sub,
+.ant-menu.ant-menu-dark .ant-menu-sub {
+	background: #000;
+	font-weight: 600;
+	// opacity: 0.7;
+}
+
+.ant-menu.ant-menu-dark .ant-menu-item-selected a,
+.ant-menu-submenu-popup.ant-menu-dark .ant-menu-item-selected a {
+	color: #a27a3d;
+	border-bottom: 30px #000 !important;
+}
+
+.ant-layout-header {
+	height: 64px;
+	padding: 0 50px;
+	line-height: 64px;
+	background: #000;
+}
+
+.ant-menu-dark .ant-menu-item,
+.ant-menu-dark .ant-menu-item-group-title,
+.ant-menu-dark .ant-menu-item > a,
+.ant-menu-dark .ant-menu-item > span > a {
+	color: #fff;
+}
+
+footer {
+	background: #424242 !important;
+}

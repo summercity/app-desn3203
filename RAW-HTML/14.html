@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>JavaScript Functions</title>
+</head>
+<body>
+<p> 
+    <h2>Types of function defintion </h2>
+    1. Named function<br />
+    2. Anonymous function<br />
+    3. Function expression<br />
+    4. Function with parameter<br />
+    5. Self-Invoking Functions<br />
+ </p>  
+ <p id="sqr"></p> 
+ <h1 id="greetme"></h1> 
+<script> 
+    //ex1. named function with parameter, w/o expression
+    function square(n){
+    document.getElementById("sqr").innerHTML="square of " + n + " = "+ n*n;
+    return console.log( n* n);
+    }
+    //function call with argument
+    square(10);// 
+    square(20);
+    //ex2 Anonymous function expression with parm
+    var square2 = function(n) {
+          return  n * n;      
+        };
+    console.log(square2(5));
+    //ex3 anonymous, self invoking function expression , with parm
+    var sqr = (function(n){
+    return console.log(n*n);
+    })(7);
+    //sqr(6); //making function call is not needed. 
+    //ex4 named, self invoking function expression
+    var msg = function greeting () {
+       console.log("Hello!!");  // I will invoke myself
+       alert("hello!");
+    }();
+    //ex5 Anonymous function expression with two parm
+    var multi = function(a,b){
+    console.log(a, b);
+    };
+    multi(2,3);
+    //ex6 anonymous and self invoking function
+   (function(n,m){
+    console.log(n + m);
+    })("hi"," mr x");
+//class activity: 
+
+const displayHello = (greet) => console.log(greet); 
+const displayInId = () => {
+ return  document.getElementById("greetme").innerHTML="Hello I am learning about Function";
+}
+//1 Create a function that display "Hello i am learning about function" on the console of the browser
+displayHello("Hello"); 
+//2 Create a function that display a message "Hello I am learning about Function" in h1 tag
+displayInId();
+</script>
+</body>
+</html>

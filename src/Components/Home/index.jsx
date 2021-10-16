@@ -6,6 +6,9 @@ import SkillChart from '../../Common/SkillChart';
 
 import './styles/Home.scss';
 import Languages from './images/languages.png';
+import LogoIntro from './images/intro-logo-black.png';
+import Intro from './videos/my-intro.mp4';
+import SucessRow from './images/success-img.png';
 const { Content } = Layout;
 
 function Home(props) {
@@ -31,6 +34,26 @@ function Home(props) {
 	return (
 		<Content style={{ padding: '0 50px', minHeight: '80vh' }}>
 			<div className="site-layout-content">
+				<video className="video-intro" loop autoPlay="autoplay" muted>
+					<source src={Intro} type="video/mp4" />
+				</video>
+				<Row id="intro" gutter={16} className="row-intro">
+					<Col xs={{ span: 24 }} md={{ span: 24 }} lg={{ span: 24 }}>
+						<div className="img-intro-wrapper">
+							<img src={LogoIntro} alt="Intro" />
+						</div>
+						<div className="text-intro-wrapper">
+							<h1 className="intro-title">
+								DESN3203 WEB DESIGN AND DEVELOPMENT
+							</h1>
+							<hr className="intro-title-hr" />
+							<p className="intro-title-p">
+								“Simplicity is the soul of efficiency.” –{' '}
+								<span>Austin Freeman</span>
+							</p>
+						</div>
+					</Col>
+				</Row>
 				<Row
 					gutter={16}
 					className="row-custom dv-ms-su-mlp-3"
@@ -63,34 +86,16 @@ function Home(props) {
 							</div>
 						</div>
 					</Col>
-					<Col xs={{ span: 24 }} md={{ span: 24 }} lg={{ span: 12 }}>
-						{/* <img
-							src="https://scontent.fyyc3-1.fna.fbcdn.net/v/t31.18172-8/191580_200880043263417_2080176_o.jpg?_nc_cat=104&ccb=1-5&_nc_sid=cdbe9c&_nc_ohc=S4xq_MylFngAX_IjCjH&_nc_ht=scontent.fyyc3-1.fna&oh=e6d98b0a1501f10112582ed2628f223c&oe=618A0B0E"
-							alt="Profile Image"
-						/> */}
-						{/* <div className="img-custom fb-pic-1">
-							<img
-								src="https://scontent.fyyc3-1.fna.fbcdn.net/v/t31.18172-8/191580_200880043263417_2080176_o.jpg?_nc_cat=104&ccb=1-5&_nc_sid=cdbe9c&_nc_ohc=S4xq_MylFngAX_IjCjH&_nc_ht=scontent.fyyc3-1.fna&oh=e6d98b0a1501f10112582ed2628f223c&oe=618A0B0E"
-								alt="Success design"
-							/>
-						</div> */}
-					</Col>
+					<Col
+						xs={{ span: 24 }}
+						md={{ span: 24 }}
+						lg={{ span: 12 }}
+					></Col>
 				</Row>
-				<Row
-					gutter={16}
-					className="row-custom row-success-web-design"
-					style={{ background: '#81C784' }}
-				>
+				<Row gutter={16} className="row-custom row-success-web-design">
 					<Col xs={{ span: 24 }} md={{ span: 12 }} lg={{ span: 12 }}>
-						{/* <img
-							src="https://scontent.fyyc3-1.fna.fbcdn.net/v/t31.18172-8/191580_200880043263417_2080176_o.jpg?_nc_cat=104&ccb=1-5&_nc_sid=cdbe9c&_nc_ohc=S4xq_MylFngAX_IjCjH&_nc_ht=scontent.fyyc3-1.fna&oh=e6d98b0a1501f10112582ed2628f223c&oe=618A0B0E"
-							alt="Profile Image"
-						/> */}
 						<div className="img-custom">
-							<img
-								src="https://www.satanko.com/en/images/satanko_web.png"
-								alt="Success design"
-							/>
+							<img src={SucessRow} alt="Success design" />
 						</div>
 					</Col>
 					<Col xs={{ span: 24 }} md={{ span: 12 }} lg={{ span: 12 }}>

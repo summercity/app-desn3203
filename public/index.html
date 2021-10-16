@@ -24,7 +24,7 @@
       work correctly both with client-side routing and a non-root public URL.
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
-    <title>My Kids Favorite Fruits</title>
+    <title>JDA</title>
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
@@ -40,4 +40,21 @@
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
   </body>
+    <script>   
+      setTimeout(function() {
+        $('.img-intro-wrapper').toggle("slide", {direction: "up" }, 2000);
+      }, 800 );
+      setTimeout(function() {
+        $('.intro-title').toggle("slide", {direction: "right" }, 1000);
+      }, 1600 );
+      setTimeout(function() {
+        // $( ".intro-title-hr" ).fadeIn();
+        $('.intro-title-hr').toggle("slide", {direction: "left" }, 1000);
+      }, 2400 );
+      setTimeout(function() {
+        $('.intro-title-p').toggle("slide", {direction: "right" }, 1000);
+      }, 3200 );
+    </script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.0/jquery-ui.js"></script>
 </html>

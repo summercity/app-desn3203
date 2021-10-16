@@ -2,7 +2,7 @@ import React, { memo } from 'react';
 import Chart from 'react-apexcharts';
 import PropTypes from 'prop-types';
 import './SkillChart.scss';
-function SkillChart({ title, colors, series, labels, loading }) {
+function SkillChart({ series }) {
 	const chartSettings = {
 		series: series,
 		options: {
@@ -76,12 +76,12 @@ function SkillChart({ title, colors, series, labels, loading }) {
 				},
 			},
 			title: {
-				text: 'Years of Experience',
+				// text: 'Years of Experience',
 				align: 'center',
 				floating: true,
 			},
 			subtitle: {
-				text: 'Tech-stack names as data labels inside bars',
+				// text: 'Tech-stack names as data labels inside bars',
 				align: 'center',
 			},
 			tooltip: {
@@ -106,7 +106,9 @@ function SkillChart({ title, colors, series, labels, loading }) {
 	// }
 
 	return (
-		<div className="pie-chart">
+		<div className="chart-skill-years">
+			<h1>Years of Experience</h1>
+			<p>Tech-stack names as data labels inside bars</p>
 			<Chart
 				className="chart"
 				options={chartSettings.options}

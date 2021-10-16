@@ -1,0 +1,46 @@
+<HTML>
+    <head>
+    </head>
+    <body>
+<script>
+    // function for scaler computation
+function square(n){
+return n* n;
+}
+function cube(n){
+    return n*n*n;
+}
+function factorial(n){
+    if(n<2){
+        return 1;
+    }
+    else{
+        return n* factorial(n-1);
+    }
+}
+var x = 5;
+var x2 = square(x)
+var x3 = cube(x)
+var xFact = factorial(x);
+console.log(x);
+console.log(x2);
+console.log(x3);
+console.log(xFact);
+//Inclass Activity
+//1. Create a function that can check if a given number is even or odd number and display the result on the console. Write a code to test your function
+const isOddOrEven = (num) => {
+    let check = num % 2;
+    if (check===1) {
+        return console.log(num + " is odd number");
+    } else {
+        return console.log(num + " is even number");
+    }
+};
+isOddOrEven(7);
+isOddOrEven(2);
+isOddOrEven(5);
+isOddOrEven(4);
+
+</script>
+</body>
+</HTML>

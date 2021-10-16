@@ -12,7 +12,7 @@ function Header(props) {
 
 	return (
 		<DefaultHeader className="header">
-			<div className="logo" />
+			<div className="logo">JDA</div>
 			<Menu
 				theme="dark"
 				mode="horizontal"
