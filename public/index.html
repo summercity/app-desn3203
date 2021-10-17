@@ -10,6 +10,8 @@
       content="Web site created using create-react-app"
     />
     <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.0/jquery-ui.js"></script>
     <!--
       manifest.json provides metadata used when your web app is installed on a
       user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
@@ -41,20 +43,40 @@
     -->
   </body>
     <script>   
-      setTimeout(function() {
-        $('.img-intro-wrapper').toggle("slide", {direction: "up" }, 2000);
-      }, 800 );
-      setTimeout(function() {
-        $('.intro-title').toggle("slide", {direction: "right" }, 1000);
-      }, 1600 );
-      setTimeout(function() {
-        // $( ".intro-title-hr" ).fadeIn();
-        $('.intro-title-hr').toggle("slide", {direction: "left" }, 1000);
-      }, 2400 );
-      setTimeout(function() {
-        $('.intro-title-p').toggle("slide", {direction: "right" }, 1000);
-      }, 3200 );
+      // jQuery($ => {
+      //   $('body').scroll(function () {
+      //     var scroll = $(this).scrollTop();
+      //     $('.header').addClass('header-fixed', scroll >= 100);
+      //   });
+      // });
+
+
+      $(document).ready(function () {
+
+        $("body").scroll(function(){
+          if ($("body").scrollTop() >= 200) {
+            $('.header').addClass('header-fixed').slideDown("slow");
+          }
+          else {
+            $('header').removeClass('header-fixed');
+          }
+        });
+
+        setTimeout(function() {
+          $('.img-intro-wrapper').toggle("slide", {direction: "up" }, 2000);
+        }, 800 );
+        setTimeout(function() {
+          $('.intro-title').toggle("slide", {direction: "right" }, 1000);
+        }, 1600 );
+        setTimeout(function() {
+          // $( ".intro-title-hr" ).fadeIn();
+          $('.intro-title-hr').toggle("slide", {direction: "left" }, 1000);
+        }, 2400 );
+        setTimeout(function() {
+          $('.intro-title-p').toggle("slide", {direction: "right" }, 1000);
+        }, 3200 );
+
+      });
+
     </script>
-    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
-    <script src="https://code.jquery.com/ui/1.13.0/jquery-ui.js"></script>
 </html>
