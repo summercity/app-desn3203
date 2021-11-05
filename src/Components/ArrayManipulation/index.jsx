@@ -206,7 +206,7 @@ function ArrayManipulation(props) {
 						<Alert
 							className="alert"
 							message="Informational Notes"
-							description="You can also use Drag & Drop to arrange the order. The delete option is available for duplicated entries."
+							description="You can also use Drag & Drop to arrange the order [Desktop supported only]. The delete option is available for duplicated entries."
 							type="info"
 							showIcon
 							closable
