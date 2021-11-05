@@ -39,6 +39,9 @@ function Header(props) {
 				<Menu.Item key="fruits">
 					<a href="/fruits">Fruits</a>
 				</Menu.Item>
+				<Menu.Item key="array-manipulation">
+					<a href="/array-manipulation">Array Manipulation</a>
+				</Menu.Item>
 			</Menu>
 		</DefaultHeader>
 	);

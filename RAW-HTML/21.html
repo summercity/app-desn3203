@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h2>Display array elements</h2>
+<p>Array output with forEach: <span id="ary1"></span></p>
+<script>
+//ex1
+  var numbers = [65, 44, 12, 4];
+  numbers.forEach( function myFunction() {  
+      ary1.innerHTML = numbers;  //if you pass a parm, you will see last element only 
+  }
+  );
+  //ex2
+  document.write("Array output from ex2 = ")
+  numbers.forEach(function(element) {         
+  document.write(element) ;//no concatination
+  });
+</script>
+  <p>Array3 output with forEach: <span id="ary3"></span></p>
+  <p>Array4 output with map: <span id="ary4"></span></p>
+  <p>Array5 output with map: <span id="ary5"></span></p>
+  <p>Array6 even numbers output with for of: <span id="ary6"></span></p>
+  <p>Array7 even numbers output with for of in function: <span id="ary7"></span></p>
+  <script>
+  //ex3
+  numbers.forEach(function (element) {    
+    ary3.innerHTML += element + "," ; //concatination 
+  });
+  //or 
+  // numbers.forEach(function (element) {    
+  //   ary3.innerHTML += '<li>'+ element + '</li>' ; //create new list element on every iteration
+  // });
+  //ex4
+  //Use map to loop through array
+  //Display the array values using map method and the getArray function defined above.
+  //Here getArray is a function callback
+  function getArray(item) { // function to get every element from an array 
+    return item;
+  }  
+  document.getElementById("ary4").innerHTML = numbers.map(getArray); //map is simple
+  //ex5
+  //Use map to loop through array with function argument
+  document.getElementById("ary5").innerHTML = numbers.map(function(item){return item}); //map is simple
+  //ex6
+  for (const e of numbers) {
+      if(e%2===0){
+        //document.getElementById("ary6").innerHTML += '<li>'+ e +'<li/>' ;
+        document.getElementById("ary6").innerHTML +=  e +'  ' ;
+      }
+    }
+//ex7
+function evens(){
+  for (const e of numbers) {
+      if(e%2===0){
+        document.getElementById("ary7").innerHTML +=  e +'  ' ;
+      }
+    }
+}
+evens();
+//you can do many more things with loop and array
+</script>
+</body>
+</html>

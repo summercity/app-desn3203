@@ -1,0 +1,118 @@
+<html>
+<head>
+</head>
+<body>
+    <p><span id="ary1"></span></p>
+    <p><span id="ary2"></span></p>
+    <p><span id="ary3"></span></p>
+    <p><span id="ary4"></span></p>
+    <p><span id="ary5"></span></p>
+    <p><span id="ary6"></span></p>
+    <p><span id="ary7"></span></p>
+    <p><span id="ary8"></span></p>
+    <p><span id="ary9"></span></p>
+    <p><span id="ary10"></span></p>
+    <p><span id="ary11"></span></p>
+    <p><span id="ary12"></span></p>
+    <pre id="out"></pre>
+    <script>
+        let arr=[1,
+                 [7,9,6],
+                 [10,20,30,40],
+                 ['Amlie','Roman','Tom'], 
+                 8,
+                ]
+                arr[1][0]
+        let arr2=[[20,10,6],[100,200,300,500],['King','Roni','Heni']]
+        // arr2[1][0] [1][1] [1][2] [1][3]
+        // arr[4]
+        // arr[0]
+        // arr[1][1]
+        let len = arr.length;//5
+        let ele = arr[3][1];//Roman
+        console.log("Array length = " + len); //what is the len of the given array?
+        document.getElementById("ary1").innerHTML = "Array length = " + len;
+        console.log(ele);//what will be the output of this statement?
+        document.getElementById("ary2").innerHTML = ele;
+        //1.  Write a code to display element 40 and 8
+        console.log(arr[2][3], arr[5])
+        document.getElementById("ary3").innerHTML = arr[2][3], arr[5];
+        //2.  Write a code to disoplay element Tom
+        console.log(arr[3][2])
+        document.getElementById("ary4").innerHTML = arr[3][2];
+        //3.  Write a code to display the length of 3rd element
+        console.log("Length of 3rd element in arr is " + (arr[3]).length)//what is the len?
+        document.getElementById("ary4").innerHTML = "Length of 3rd element in arr is " + (arr[3]).length;
+        arr[2][3], arr[5]
+        //Loop through multi_dim array
+        //ex1
+        console.log("Example 1 loop through array elements")
+        document.getElementById("ary5").innerHTML = "Example 1 loop through array elements";
+        let a = ""
+        for(let i = 0; i < arr.length; i++){ //rows in the array
+                   console.log(arr[i]);//rows in the array
+                   a += arr[i] + "<br />";
+                   
+        }
+        document.getElementById("ary6").innerHTML = a;
+        //ex2
+        console.log("Example 2 loop through nested array elem")
+        document.getElementById("ary7").innerHTML = "Example 2 loop through nested array elem";
+        let o;
+        for(let i = 0; i < arr.length; i++){ //rows in the array, outer array
+            for(let j = 0 ; j < arr[i].length; j++){//col in the array, all non array elements will be skipped
+                console.log(arr[i][j]);//will return every array elements
+                o += arr[i][j] + "<br />";
+            }
+            document.getElementById("ary8").innerHTML = o;
+            // console.log("-------------")
+            // document.getElementById("ary9").innerHTML = "-------------";
+        }
+        //ex3
+        console.log("Example 3 loop through nested array with forEach")
+        document.getElementById("ary10").innerHTML = "Example 3 loop through nested array with forEach";
+        let b=""
+        arr2.forEach(function(r){ //the array must contain array elements only to use forEach method
+            r.forEach(function(e){
+                console.log(e);
+                b += e + "<br />";
+            });
+            document.getElementById("ary11").innerHTML = b;
+            console.log("***************" );
+            document.getElementById("ary12").innerHTML = "***************";
+        });
+    //class learning activity
+    //Based on example 02 from previouse lecture, modify this code to display the output on HTML elements instead of console. 
+    //Write a function using nested loop that display a rightandlge triangle and a square 
+
+    let n = 5
+    let x = ""
+
+        for (let i = 1; i <= n; i++){
+        // i + 1,2,3,4,5
+            for (let j = 1; j <= i; j++){
+                x += "*"
+            }
+            x += "\n"
+        // * += 5
+        }
+
+        console.log(x)
+
+        let ctr = 1;
+        let square = (num) => {
+            for(i = 0; i < num; i++){
+            let row = ''
+                for(j = 0; j < num; j++){
+                    row+='#  '
+                }
+                // printing # # # # # #
+                console.log(row+" " + ctr++);
+            }
+        }
+        square(6);
+
+
+    </script>
+</body>
+</html>

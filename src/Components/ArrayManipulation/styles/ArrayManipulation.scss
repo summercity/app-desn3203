@@ -1,0 +1,102 @@
+.site-layout-content {
+	position: relative;
+	padding: 10px;
+}
+
+.array-manipulation {
+	margin: 0 auto;
+	max-width: 300px;
+	text-align: center;
+
+	h1 {
+		margin-bottom: 40px;
+	}
+
+	.input-fruit {
+		margin-bottom: 10px;
+	}
+
+	.input-fruit,
+	button {
+		width: 300px;
+		background: #000;
+	}
+
+	button {
+		margin: 5px 0 1px 0;
+		font-size: 28px;
+		vertical-align: middle;
+		text-align: justify;
+		height: 50px !important;
+	}
+
+	.btn-sort {
+		max-width: 70px;
+		margin-left: 5px;
+		margin-right: 5px;
+	}
+
+	.anticon svg {
+		display: inline-block;
+		font-size: 30px;
+		vertical-align: middle;
+	}
+
+	#sortable {
+		list-style-type: none;
+		padding: 0;
+		background-color: darkgray;
+		min-width: 300px;
+		margin-top: 20px;
+		li {
+			padding: 10px;
+			background-color: #fff;
+			border: 2px dotted #000;
+			cursor: pointer;
+		}
+	}
+
+	.block-new-fruit {
+		margin-top: 30px;
+		margin-bottom: 30px;
+		padding: 10px;
+		border: 1px dashed;
+		background: #fff;
+		min-width: 300px;
+	}
+
+	.btn-delete-duplicate {
+		width: 30px !important;
+		float: right;
+		background: red;
+		margin-top: -2px;
+		border-radius: 5px;
+		color: #fff;
+	}
+	.look-good {
+		width: 30px !important;
+		float: right;
+		background: green;
+		margin-top: -2px;
+		border-radius: 5px;
+		color: #fff;
+	}
+	.alert {
+		width: 300px;
+		text-align: left !important;
+		margin-bottom: 20px;
+
+		button {
+			width: unset;
+			background: unset;
+			margin: unset;
+
+			vertical-align: unset;
+			text-align: unset;
+		}
+		.anticon svg {
+			//margin-top: -50px;
+			font-size: 20px !important;
+		}
+	}
+}

@@ -1,0 +1,83 @@
+<html>
+<head>
+</head>
+<body>
+<script>
+  //var arr = [1,3,5,7, ,7]
+//   let arr = new Array();        // Create a new array. 
+//   let arr = [];             // Create a new array.  This way is better.
+//   let arr = [1, 2, 3];      // Create a new array with elements.
+//    let arr = [1, 'cat', false]; // You can mix element types in an array.
+//   let len = arr.length;     // You can measure the length of an array.  Note that length is a property, not a method.
+//   arr.push(...); // Append an element to an array.
+//   arr.pop(..); // Remove the last element from an array.
+//   arr.unshift(50); // Insert an element 50 to the beginning of an array.
+//   arr.shift(); // Remove the first element from an array.
+//   arr.sort(); // Arrange elements in the array
+//   arr.splice(position, count, elements...); //to delete array elements
+//   arr.slice(start, end); // to extract and create new array elements
+//   arr1.concat(arr2);// to join two arrays and get new array
+  //EX1  
+//   console.log("Example 1");
+  let arr = ['cat', 'dog', 'lizard', , , ,'fish',51,51];   // An array with three elements. arr[0],arr[1],arr[2]
+//   arr[6] = 'fish';                  // Add 4th element at index [6].
+//   arr.push(51); //add new element at the end of the array
+//    console.log("Array length =  " + arr.length);                // 5?
+//    console.log(arr[3]);                 // undefined!
+//   //you can try to console all elements and you should get the below result
+//   // [0] cat
+//   // [1] dog
+//   // [2] lizard
+//   // [3 - 5] undefined 
+//   // [6] fish
+//   // [7] 51
+//   //Ex2 -----------------Remove and sort elements from Array
+//   console.log("Example 2")
+//   arr.pop();                // Remove the last element from an array.
+//   console.log("Array len is = " + arr.length)
+//   console.log(arr)
+//   arr.unshift(-11);         // Insert an element to the beginning of an array.
+//   console.log("Array len is = " + arr.length)
+//   console.log(arr)
+//   arr.push(30)
+//   console.log("Array len is : " + arr.length)
+//   arr.shift();              // Remove the first element from an array.
+//   console.log("Array len is = " + arr.length)
+//   console.log(arr)
+// //   arr.sort();                 // sort the array elements
+// //   console.log(arr)
+//   // Ex3 -------Splice and Slice method in Array
+  console.log("Example 3")
+  //ex-a
+  var trees = ['spruce','apple', 'pine','aspen', 'cedar', 'maple', 'oak', 'birch', 'aspen'];
+  var newt = trees.splice(1,3, 'MangoTree' , 'AvocadoTree') //1=position,3= count,element=new values
+  console.log( trees);
+  console.log(newt)
+//   // //ex-b
+  var months = ['Jan', 'March', 'April', 'June'];
+  months.splice(1, 0, 'Feb'); // inserts at index 1
+  console.log(months);
+
+  months.splice(4, 1, 'May'); // replaces 1 element at index 4
+  console.log(months);
+//   // The slice method is for extracting a subset of an array.  It does not 
+//   // mutate the source array and returns a new array with the sliced elements.
+  let newarr = months.slice(0, 3);
+  console.log( newarr)
+//   // Ex 4 --------Concat Arrays
+//   // // The concat method is a powerful way to federate (join) multiple arrays 
+//   // // into a single result array.  
+//   console.log("Example 4");
+//   let conifers = ['spruce', 'pine', 'cedar'];
+//   let deciduous = ['maple', 'oak', 'birch', 'aspen'];
+//   let theTrees = conifers.concat(deciduous);
+//   console.log(theTrees.length);     // 7
+//   // --- read about find,filter,reduce,every and some  etc....
+//   // arr.find(test)         // Find the first element matching a test function.
+//   // arr.filter(filter)     // Make a new array that selects out certain elements.
+//   // arr.reduce(aggregate)  // Return an aggregate value out of all elements.
+//   // arr.every(test)        // Return true if all elements pass test.
+//   // arr.some(test)         // Return true if any element(s) pass test.
+</script>
+</body>
+</html>

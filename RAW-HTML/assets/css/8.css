@@ -12,9 +12,18 @@
 }
 
 a {
-	color: #fff !important;
+	color: rgb(50%, 25%, 25%) !important;
 }
 
 a:hover {
 	background-color: tomato;
+}
+
+.test {
+	width: 100%;
+	background-color: aliceblue;
+}
+
+.test img {
+	float: left;
 }

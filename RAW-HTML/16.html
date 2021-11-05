@@ -1,0 +1,69 @@
+<html>   
+   <head>
+      <style>
+         div{
+            border: solid blue 2px;
+            margin-top: 150px;
+            margin-left: 150px;
+            width: 50%;
+         }
+      </style>
+   <title>User-defined objects</title>
+      <script type = "text/javascript">
+         // Define a function which will work as a method and property
+         function courseCode(code) {
+            this.ccode = code; 
+            console.log(this + "coursecode");
+         }
+         function classRoom (room){
+             this.croom = room;
+         }
+         function Course(cname, teacher, deptName, credithour) {
+            this.teacher = teacher;
+            this.cname  = cname;
+            this.codeInfo = courseCode;  // Assign the above method as property.
+            this.roomInfo = classRoom;
+            this.deptName = deptName;
+            this.credithour =  credithour;
+            console.log(this +"course function");
+         }
+      </script>      
+   </head>
+   <body> 
+      <div style="border: solid 1px gray;">
+        <h2>This keyword example 2</h2>         
+        <br />
+          course code <input type="text" id="code" /> <br /> <br />
+          course name <input type="text" id="name" /> <br /> <br />
+          course teacher <input type="text" id="teacher" /> <br /> <br />
+          classRoom <input type="text" id="room" /> <br /> <br />
+          departement name <input type="text" id="departementname" /> <br /> <br />
+          credithour <input type="text" id="credithour" /> <br /> <br />
+          <button onclick="CourseDetail();">submit</button>
+          <p id="output"></p>
+      </div>
+      <script type = "text/javascript">      
+        function CourseDetail(){ 
+            //get user input    
+            var newcode = document.getElementById('code').value;
+            var myCoursename = document.getElementById('name').value;
+            var myTeachername = document.getElementById('teacher').value;
+            var newroom = document.getElementById('room').value;
+            var departementname = document.getElementById('departementname').value;
+            var credithour = document.getElementById('credithour').value;
+            var mycourse = new Course(myCoursename, myTeachername, departementname, credithour);// create instance of course object using new operator
+            mycourse.codeInfo(newcode);
+            mycourse.roomInfo('N718')//newroom
+            // output code
+            document.getElementById('output').innerHTML="course name is : "
+             + mycourse.cname + "<br /> course teacher is : " + mycourse.teacher 
+             + "<br />course code is : " + mycourse.ccode 
+             + " <br />Classroom is : " + mycourse.croom 
+             + "<br />departement name is : " + mycourse.deptName 
+             + " <br />credithour is : " + mycourse.credithour 
+             + " <br />";            
+        }
+        //class activity, add departementname and credithour information on the above code. 
+     </script>  
+   </body>
+</html>

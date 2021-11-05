@@ -1,0 +1,48 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <!--Modify this application with another method/technique to display the sum, difference , product and division with one button click instead of 4 buttons-->
+    <script>
+      function doMath(operator) {
+        const n1 = parseFloat(document.getElementById('n1').value);
+        const n2 = parseFloat(document.getElementById('n2').value);
+        let result;
+        switch (operator) {
+          case "+":
+            result = n1 + n2;
+            break;
+          case "-":
+            result = n1 - n2;
+            break;
+          case "*":
+            result = n1 * n2;
+            break;
+          case "/":
+            result = n1 / n2;
+            break;
+          default:
+            alert("Bad operator");
+        }
+        console.log(n1 + operator + n2 + '=' + result);
+      }
+
+      for(i=5; i>=0; i=i-1){
+          document.write("i  = " + i );
+          document.write("<br />");
+      }
+
+    </script>
+    <title>doMath</title>
+    </head>
+    <body>
+    <main>
+      <label for="n1">First Number:</label>  <input id="n1">
+      <label for="n2">Second Number:</label>  <input id="n2">
+      <br />
+      <button onclick="doMath('+')">Add</button>
+      <button onclick="doMath('-')">Subtract</button>
+      <button onclick="doMath('*')">Multiply</button>
+      <button onclick="doMath('/')">Divide</button>
+    </main>
+    </body>
+    </html>

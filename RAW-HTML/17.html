@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="stylesheet" href="../normalize.css">
+<link rel="stylesheet" href="../styles.css">
+<script>
+  // if(){}
+  // if-else
+  // nested-if
+  // if-else-if
+  //ex1 if
+  document.write("<h2>Change the value of age to get different message on each example</h2>")
+  function checkAge1(){
+    document.write("<h2>ex1 if statement</h2>"); 
+    var  age = 19;   
+    var tr = 18;
+    if (age > tr){ 
+      document.write("You can vote"); 
+      document.write("Congra"); 
+    }
+    document.write("<br /> <p>This is code outside of your if statement </p>"); //this will be executed always 
+  }
+  // checkAge1()//call the function for execution
+  //  //ex2 if..else
+  //  function checkAge2(){
+  //   document.write("<h2>ex2</h2>"); 
+  //   var  age = 10;   
+  //   if (age > 18){  
+  //   document.write("You can vote"); 
+  //   }else{
+  //     document.write("You are too young you can not vote");  
+  //   }
+  // }
+  // checkAge2()//call the function for execution
+  // //ex3 nested if
+  // function checkAge3(){
+  //   document.write("<h2>ex3</h2>");
+  //   var  age = 45;   
+  //   if (age > 18){  
+  //   document.write("You can vote <br />"); 
+  //     if(age>=21){ 
+  //       document.write("Beside voting, you can drink as well")
+  //     }
+  //   }else{
+  //     document.write("You are too young you can not vote");  
+  //   }
+  // }
+  // checkAge3();
+  // //ex4 nested if else if
+  // function checkAge4(){
+  //   const age = prompt("Your age?", "") ; 
+  //   if (age >= 21) {
+  //     alert("You can vote and drink!");
+  //   } else if (age >= 18) {
+  //     alert("You can vote, but can't drink.");
+  //   } else {
+  //     alert("You cannot vote or drink.");
+  //   }
+  // }
+</script>
+<title>Conditional Statements Demo</title>
+</head>
+<body>
+<main style="text-align: center;margin-top: 170px;">
+  <h1>JavaScript if - else if - else Demo ex 4</h1>
+  <h2>Click on the button to use age check application</h2>
+  <button onclick="checkAge1()">Age Check</button><br />
+  <p>Inclass Activity: After your observe how the age check application works modify the code to replace any popup window with html elements</p>
+  <h3>To read more about if and if..else Statements please refer to the following <a href="https://www.geeksforgeeks.org/else-statement-javascript/" target="_blank">page</a></h3>
+</main>
+</body>
+</html>

@@ -5,6 +5,7 @@ import Home from './Components/Home';
 import Form from './Components/Form';
 // import Professions from './Components/Professions';
 import Fruits from './Components/Fruits';
+import ArrayManipulation from './Components/ArrayManipulation';
 
 function App() {
 	return (
@@ -17,6 +18,10 @@ function App() {
 						<Route path="/form" component={Form} />
 						{/* <Route path="/professions" component={Professions} /> */}
 						<Route path="/fruits" component={Fruits} />
+						<Route
+							path="/array-manipulation"
+							component={ArrayManipulation}
+						/>
 					</Switch>
 				</BrowserRouter>
 			</AppWrapper>

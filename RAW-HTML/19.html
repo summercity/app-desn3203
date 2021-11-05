@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="stylesheet" href="../normalize.css">
+<link rel="stylesheet" href="../styles.css">
+<title>JavaScript Conditionals Demo</title>
+</head>
+<body>
+  <p id="frt"></p>
+<main>
+  <h1>JavaScript for and foreach </h1>
+  <script>
+    function f1(){
+        var i;      
+        for (i = 0 ; i <= 10 ; i++)  //i++ and ++i 
+        {
+            document.write("Hello World!\n");//modify this code to display this message output vertically on your browser
+        }
+    }
+
+    function f2(){
+        //for loop , used to loop through a rang of values, to simplify code
+        var i;
+        for (i=5; i>=0; i=i-1){  //i = 5,i = 4, i = 3  i = 2 i = 1  i= 0
+        document.write("i = " + i);
+        document.write("<br />")
+        }
+    }
+
+    //for in , used to loop through object peroperty value
+    var myobj = {n1: 1, n2: 2, n3: 3};
+    for (var prop in myobj) {
+      document.write(prop +":"+myobj[prop]+" ");
+    }
+    document.write("<br />");
+    //for of , used to work on particular element of an array
+    const fruit = ['Apples','Oranges','Bananas','Pears']; //fruit[0]
+    for (const fruitname of fruit) {
+      document.write(fruitname);
+    }
+    document.write("<br />");
+    //foreach mainly used to loop through array
+    fruit.forEach(function(e) {
+        console.log(e);
+        document.write(e)
+    });
+    </script>
+</main>
+<br />
+<p>Reference <a href="https://www.geeksforgeeks.org/loops-in-javascript/">click here</a></p>
+<!-- Structure this code by creating a function for each program -->
+</body>
+</html>
