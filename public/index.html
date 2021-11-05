@@ -26,41 +26,18 @@
       work correctly both with client-side routing and a non-root public URL.
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
-    <title>JDA</title>
-  </head>
-  <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
 
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
-
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
-  </body>
-    <script>   
-      // jQuery($ => {
-      //   $('body').scroll(function () {
-      //     var scroll = $(this).scrollTop();
-      //     $('.header').addClass('header-fixed', scroll >= 100);
-      //   });
-      // });
-
-
+        <script>   
       $(document).ready(function () {
 
-        $("body").scroll(function(){
-          if ($("body").scrollTop() >= 50) {
-            $('.header').addClass('header-fixed').slideDown("slow");
-          }
-          else {
-            $('header').removeClass('header-fixed');
-          }
-        });
+        // $("body").scroll(function(){
+        //   if ($("body").scrollTop() >= 50) {
+        //     $('.header').addClass('header-fixed').slideDown("slow");
+        //   }
+        //   else {
+        //     $('header').removeClass('header-fixed');
+        //   }
+        // });
 
         setTimeout(function() {
           $('.img-intro-wrapper').toggle("slide", {direction: "up" }, 2000);
@@ -80,4 +57,21 @@
 
 
     </script>
+
+    <title>JDA</title>
+  </head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+    <!--
+      This HTML file is a template.
+      If you open it directly in the browser, you will see an empty page.
+
+      You can add webfonts, meta tags, or analytics to this file.
+      The build step will place the bundled scripts into the <body> tag.
+
+      To begin the development, run `npm start` or `yarn start`.
+      To create a production bundle, use `npm run build` or `yarn build`.
+    -->
+  </body>
 </html>
