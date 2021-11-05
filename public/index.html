@@ -30,14 +30,12 @@
         <script>   
       $(document).ready(function () {
 
-        // $("body").scroll(function(){
-        //   if ($("body").scrollTop() >= 50) {
-        //     $('.header').addClass('header-fixed').slideDown("slow");
-        //   }
-        //   else {
-        //     $('header').removeClass('header-fixed');
-        //   }
-        // });
+        $("body").scroll(function(){
+          if ($("body").scrollTop() >= 70) {
+            $('.header').hide();
+            $('.header').slideDown("slow");
+          }
+        });
 
         setTimeout(function() {
           $('.img-intro-wrapper').toggle("slide", {direction: "up" }, 2000);

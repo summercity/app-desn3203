@@ -11,7 +11,7 @@ function Header(props) {
 	const { pageInfo } = state;
 
 	return (
-		<DefaultHeader className="header">
+		<DefaultHeader className="header header-fixed">
 			<div id="header" className="logo">
 				JDA
 			</div>
