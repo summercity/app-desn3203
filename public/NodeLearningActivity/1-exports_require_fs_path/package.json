@@ -1,0 +1,11 @@
+{
+  "name": "temperature-converter",
+  "version": "1.0.0",
+  "description": "Temperature Converter",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "TG",
+  "license": "ISC"
+}
