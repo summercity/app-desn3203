@@ -2,10 +2,10 @@ import React, { useContext, useEffect } from 'react';
 import { Layout, Col, Row } from 'antd';
 import { Context } from '../../context/ContextStore';
 import { SET_PAGE_INFO } from '../../context/constants';
-import SkillChart from '../../Common/SkillChart';
+// import SkillChart from '../../Common/SkillChart';
 
 import './styles/Home.scss';
-import Languages from './images/languages.png';
+// import Languages from './images/languages.png';
 import LogoIntro from './images/intro-logo-black.png';
 import Intro from './videos/my-intro.mp4';
 import SucessRow from './images/success-img.png';
@@ -63,9 +63,9 @@ function Home(props) {
 						<div className="row-custom-content">
 							<div className="row-custom-content-main-div">
 								<h2 style={contentStyle}>
-									<div className="image-cropper">
+									<div className="image-cropper-home">
 										<img
-											src="https://scontent.fyyc3-1.fna.fbcdn.net/v/t31.18172-8/191580_200880043263417_2080176_o.jpg?_nc_cat=104&ccb=1-5&_nc_sid=cdbe9c&_nc_ohc=S4xq_MylFngAX_IjCjH&_nc_ht=scontent.fyyc3-1.fna&oh=e6d98b0a1501f10112582ed2628f223c&oe=618A0B0E"
+											src="https://scontent.fyyc3-1.fna.fbcdn.net/v/t31.18172-8/191580_200880043263417_2080176_o.jpg?_nc_cat=104&ccb=1-5&_nc_sid=cdbe9c&_nc_ohc=GywktWbqvPcAX_ZzheD&_nc_ht=scontent.fyyc3-1.fna&oh=d54688e58616c33ecd14b6b3fc12cad4&oe=61CD478E"
 											alt="External"
 										/>
 									</div>
@@ -125,7 +125,7 @@ function Home(props) {
 						</div>
 					</Col>
 				</Row>
-				<Row gutter={16} className="row-expertise">
+				{/* <Row gutter={16} className="row-expertise">
 					<Col xs={{ span: 24 }} md={{ span: 24 }} lg={{ span: 24 }}>
 						<h1>EXPERTISE</h1>
 						<div className="img-wrapper-expertise">
@@ -139,7 +139,7 @@ function Home(props) {
 							<SkillChart />
 						</div>
 					</Col>
-				</Row>
+				</Row> */}
 			</div>
 		</Content>
 	);

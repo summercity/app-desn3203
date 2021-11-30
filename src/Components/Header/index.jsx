@@ -27,12 +27,9 @@ function Header(props) {
 				<Menu.Item key="home">
 					<a href="/">Home</a>
 				</Menu.Item>
-				{/* <Menu.Item key="profile">
-					<a href="/profile">Profile</a>
+				<Menu.Item key="profession">
+					<a href="/profession">My Profession</a>
 				</Menu.Item>
-				<Menu.Item key="professions">
-					<a href="/professions">Professions</a>
-				</Menu.Item> */}
 				<Menu.Item key="form">
 					<a href="/form">Registration</a>
 				</Menu.Item>
@@ -41,6 +38,9 @@ function Header(props) {
 				</Menu.Item>
 				<Menu.Item key="array-manipulation">
 					<a href="/array-manipulation">Array Manipulation</a>
+				</Menu.Item>
+				<Menu.Item key="contact">
+					<a href="/contact">Contact</a>
 				</Menu.Item>
 			</Menu>
 		</DefaultHeader>
