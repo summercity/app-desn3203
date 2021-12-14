@@ -79,7 +79,7 @@ function Employee(props) {
 		) {
 			console.log('Please enter required fields...');
 		} else {
-			fetch('https://desn3203-api.herokuapp.com/api/employee/all', {
+			fetch('https://desn3203-api.herokuapp.com/api/employee', {
 				method: 'POST',
 				headers: {
 					Accept: 'application/json',
