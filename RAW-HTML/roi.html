@@ -1,0 +1,38 @@
+<html>
+<style>
+    #canvas {
+        border: solid 2px #000;
+        width: 313px;
+        height: 410px;
+    }
+</style>
+
+ <body onload="draw();">
+   <canvas id="canvas" ></canvas>
+   <div style="display:none;">
+     <img id="source" src="https://dummyimage.com/300.png/09f/fff">
+     <img id="frame" src="https://www.gbcresearch.ca/wp-content/uploads/2015/07/300x300-Front-page.gif" width="132" height="150">
+   </div>
+ </body>
+</html>
+
+<script>
+    function draw() {
+  var canvas = document.getElementById('canvas');
+    var ctx = canvas.getContext('2d');
+
+    // Draw slice
+    ctx.drawImage(document.getElementById('source'),
+    29,
+                        52,
+                        39,
+                        52,
+                        39,
+                        68,
+                        29,
+                        68)
+
+    // Draw frame
+    // ctx.drawImage(document.getElementById('frame'), 0, 0);
+}
+</script>

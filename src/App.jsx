@@ -7,6 +7,7 @@ import Contact from './Components/Contact';
 import Profession from './Components/Profession';
 import Fruits from './Components/Fruits';
 import ArrayManipulation from './Components/ArrayManipulation';
+import Employee from './Components/Employee';
 
 function App() {
 	return (
@@ -27,6 +28,7 @@ function App() {
 							component={ArrayManipulation}
 						/>
 						<Route path="/contact" component={Contact} />
+						<Route path="/employee" component={Employee} />
 					</Switch>
 				</BrowserRouter>
 			</AppWrapper>

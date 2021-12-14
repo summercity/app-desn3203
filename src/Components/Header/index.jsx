@@ -42,6 +42,9 @@ function Header(props) {
 				<Menu.Item key="contact">
 					<a href="/contact">Contact</a>
 				</Menu.Item>
+				<Menu.Item key="employee">
+					<a href="/employee">Employee</a>
+				</Menu.Item>
 			</Menu>
 		</DefaultHeader>
 	);

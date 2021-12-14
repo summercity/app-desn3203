@@ -6,9 +6,13 @@ var port = 5000;
 var clb = function () {
 	console.log('Listining to port 5000');
 };
+app.use(express.static('public'));
+const path = require('path');
+app.use('/static', express.static(path.join(__dirname, 'public')));
 app.listen(port, clb);
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
+
 //http:localhost:5000
 app.get('/', function (req, res) {
 	res.send('Hello welcome to this page');
@@ -106,6 +110,8 @@ app.post('/signing', function (req, res) {
 app.use(function (req, res) {
 	res.status(404).send("Sorry, that page doesn't exist.  :)");
 });
+
+app.use(express.static(path.join(__dirname, 'public')));
 //Learning Activity
 //Install POSTMAN and test your api
 //Today class work

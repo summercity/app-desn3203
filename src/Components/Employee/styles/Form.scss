@@ -1,0 +1,13 @@
+@import '../../../settings.scss';
+
+.registration-form-wrapper {
+	padding: 5px;
+	// margin-right: 40px;
+	.custom-form {
+		width: 400px;
+		margin: auto;
+		form {
+			width: 400px;
+		}
+	}
+}
