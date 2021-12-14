@@ -69,41 +69,57 @@ function Employee(props) {
 
 	const register = () => {
 		console.log('payload', employee);
-		// fetch('https://desn3203-api.herokuapp.com/api/emplyee', {
-		fetch('http://localhost:5000/api/employee', {
-			method: 'POST',
-			headers: {
-				Accept: 'application/json',
-				'Content-Type': 'application/json',
-			},
-			body: JSON.stringify(employee),
-		})
-			.then((response) => {
-				return response.json();
+		if (
+			employee.firstName === '' ||
+			employee.lastName === '' ||
+			employee.birthday === '' ||
+			employee.profession === '' ||
+			employee.salary === '' ||
+			employee.company === ''
+		) {
+			console.log('Please enter required fields...');
+		} else {
+			fetch('https://desn3203-api.herokuapp.com/api/employee/all', {
+				method: 'POST',
+				headers: {
+					Accept: 'application/json',
+					'Content-Type': 'application/json',
+				},
+				body: JSON.stringify(employee),
 			})
-			.then((responseData) => {
-				console.log('res', responseData);
-				return responseData;
-			})
-			.then((data) => {
-				console.log('data', data);
-				if (data === true) {
+				.then((response) => {
+					return response.json();
+				})
+				.then((responseData) => {
+					console.log('res', responseData);
+					return responseData;
+				})
+				.then((data) => {
+					console.log('data', data);
+					// if (data === true) {
 					openNotificationWithIcon({
 						type: 'success',
 						message: 'Information',
 						description: 'Successfully saved!',
 					});
 					form.resetFields();
-				}
-			})
+					//}
+				})
 
-			.catch((err) => {
-				console.log('fetch error' + err);
-			});
+				.catch((err) => {
+					console.log('fetch error' + err);
+				});
+		}
 	};
 
 	const onChange = (e) => {
 		employee[e.target.name] = e.target.value;
+
+		// if (e.target.name === 'birthday') {
+		// 	employee[e.target.name] = moment(e.target.value).format(
+		// 		'mm/dd/yyy'
+		// 	);
+		// }
 
 		setEmployee(employee);
 	};
@@ -114,6 +130,12 @@ function Employee(props) {
 			description,
 		});
 	};
+
+	function onChangeDate(date, dateString) {
+		console.log(date, dateString);
+		employee.birthday = dateString;
+		setEmployee(employee);
+	}
 
 	return (
 		<Content
@@ -207,7 +229,7 @@ function Employee(props) {
 							},
 						]}
 					>
-						<DatePicker name="birthday" />
+						<DatePicker name="birthday" onChange={onChangeDate} />
 					</Form.Item>
 
 					<Form.Item
